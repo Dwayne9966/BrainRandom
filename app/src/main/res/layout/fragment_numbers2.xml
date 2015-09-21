@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentD"
+    tools:context="com.example.dwayne.brainrandom.Numbers">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="8"
+        android:id="@+id/buttoneight"
+        android:textSize="193sp"
+        android:background="#FFFF30"/>
+
+</FrameLayout>
