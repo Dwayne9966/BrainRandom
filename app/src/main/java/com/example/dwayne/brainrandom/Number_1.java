@@ -24,7 +24,7 @@ public class Number_1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_numbers2, container, false);
+        View view = inflater.inflate(R.layout.fragment_number_2, container, false);
         button = (Button) view.findViewById(R.id.button_eight);
         button.setText(mNumbered + "4");
         return view;

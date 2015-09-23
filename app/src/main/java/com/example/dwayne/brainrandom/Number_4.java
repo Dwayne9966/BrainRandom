@@ -21,7 +21,7 @@ private Button buttoned;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_numbers2, container, false);
+        View view = inflater.inflate(R.layout.fragment_number_2, container, false);
         buttoned = (Button)view.findViewById(R.id.buttoneight);
         buttoned.setText(mNumberel + "5");
         return view;

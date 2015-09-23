@@ -17,10 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Number_9"
-            android:label="@string/title_activity_number_9" >
-        </activity>
     </application>
 
 </manifest>

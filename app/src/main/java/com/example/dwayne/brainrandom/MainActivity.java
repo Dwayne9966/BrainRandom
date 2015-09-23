@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         btn1 = (Button) findViewById(R.id.buttoneight);
         btn2 = (Button) findViewById(R.id.button_three);
-        btn3 = (Button) findViewById(R.id.button_four);
-        btn4 = (Button) findViewById(R.id.button_five);
         numbers = RandomNumberGenerator.getNumbers();
     }
     @Override
@@ -35,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 counter++;
                 break;
         }
-
     }
     public void showNextNumber() {
         counter ++;

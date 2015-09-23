@@ -17,13 +17,11 @@ public class Number_2 extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_numbers2, container, false);
+        View view = inflater.inflate(R.layout.fragment_number_2, container, false);
         button_three = (Button)view.findViewById(R.id.button_three);
         button_three.setText(mNumbers + "4");
         return view;
@@ -31,7 +29,6 @@ public class Number_2 extends Fragment {
     public void setNumber(int number) {
         mNumbers = number;
     }
-
     }
 
 
