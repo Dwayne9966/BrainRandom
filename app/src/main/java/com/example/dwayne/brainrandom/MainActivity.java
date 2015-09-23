@@ -3,14 +3,13 @@ package com.example.dwayne.brainrandom;
 
 
 import android.os.Bundle;
-
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btn1,btn2,btn3,btn4;
+    Button btn1,btn2;
     int counter = 0;
     Integer[] numbers = {5, 6, 2, 8};
 
@@ -28,8 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.buttoneight:
                 counter++;
-               break;
             case R.id.button_three:
+                counter++;
+            case R.id.button_four:
                 counter++;
                 break;
         }
@@ -59,5 +59,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .replace(R.id.centerMain,fragmentM,"NUMBER")
                 .addToBackStack(null)
                 .commit();
+    }
+    public void showNextNumber_three(){
+        counter++;
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        Number_3 fragmentN = new Number_3();
+        fragmentN.setNumber(numbers[counter]);
+        fragmentManager.beginTransaction()
+                .replace(R.id.centerMain,fragmentN,"NUMBER")
+                .addToBackStack(null)
+                .commit();
+    }
+    public void clicked_4(View v){
+        showNextNumber_three();
+
     }
 }

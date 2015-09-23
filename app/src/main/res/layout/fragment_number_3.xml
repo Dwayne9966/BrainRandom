@@ -1,15 +1,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/fragmentE"
-    tools:context="com.example.dwayne.brainrandom.Number_2">
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.dwayne.brainrandom.Number_3">
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:onClick="clicked3"
-        android:id="@+id/button_three"
+        android:onClick="clicked_4"
+        android:id="@+id/button_four"
         android:textSize="193sp"
         android:background="#FFFF30"/>
+
 
 </FrameLayout>
