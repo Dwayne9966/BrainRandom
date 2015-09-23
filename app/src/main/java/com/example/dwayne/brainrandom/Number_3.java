@@ -6,23 +6,26 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v4.app.Fragment;
 import android.widget.Button;
 
+public class Number_3 extends Fragment {
+    private Button button_three;
+    private int mNumbers;
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
-public class Numbers extends Fragment {
-    private Button button;
-    private int mNumber;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_numbers2, container, false);
-        button = (Button)view.findViewById(R.id.buttoneight);
-        button.setText(mNumber + "5");
+        View view = inflater.inflate(R.layout.fragment_numbers3, container, false);
+        button_three = (Button)view.findViewById(R.id.button_three);
+        button_three.setText(mNumbers + "5");
         return view;
     }
     public void setNumber(int number) {
-        mNumber = number;
+        mNumbers = number;
     }
 }
