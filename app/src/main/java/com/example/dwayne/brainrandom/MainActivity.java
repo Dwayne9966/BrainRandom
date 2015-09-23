@@ -36,13 +36,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void showNextNumber() {
         counter ++;
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        Number_1 fragmentNM = new Number_1();
-        fragmentNM .setNumber(numbers[counter]);
-        fragmentManager.beginTransaction()
-                .replace(R.id.centerMain, fragmentNM, "NUMBER")
-                .addToBackStack(null)
-                .commit();
+        if (counter < numbers.length) {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            Number_1 fragmentNM = new Number_1();
+            fragmentNM.setNumber(numbers[counter]);
+            fragmentManager.beginTransaction()
+                    .replace(R.id.centerMain, fragmentNM, "NUMBER")
+                    .addToBackStack(null)
+                    .commit();
+        }
+        else {
+            //Do something else, numbers is up
+        }
     }
     public void clicked(View v) {
         showNextNumber();
