@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         showNextNumber();
     }
     public void clicked_two(View v){
-        showNextNumber_two();
+        showNextNumber();
     }
     public void showNextNumber_two(){
         counter++;
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .commit();
     }
     public void clicked_3(View v){
-        showNextNumber_three();
+        showNextNumber();
     }
     public void VideoView_click(View v) {
         showCelebration();
