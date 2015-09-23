@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:onClick="clicked_two"
-        android:text="2"
+
         android:id="@+id/button_three"
         android:textSize="193sp"
         android:background="#FFFF30"/>

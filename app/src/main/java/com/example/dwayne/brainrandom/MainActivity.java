@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Integer[] numbers;
 
     private static int GET_THIS_MANY_NUMBERS = 10;
-    private static int GET_NUMBERS_BETWEEN_ZERO_AND_THIS_MANY = 100;
+    private static int GET_NUMBERS_BETWEEN_ZERO_AND_THIS_MANY = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     .addToBackStack(null)
                     .commit();
         }
+
         else {
             //Do something else, numbers is up
             showCelebration();
@@ -99,5 +100,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .addToBackStack(null)
                 .commit();
     }
-
 }

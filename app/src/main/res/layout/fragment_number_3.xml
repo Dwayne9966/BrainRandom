@@ -5,7 +5,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:onClick="clicked_3"
+
         android:id="@+id/button_four"
         android:textSize="193sp"
         android:background="#FFFF30"/>
