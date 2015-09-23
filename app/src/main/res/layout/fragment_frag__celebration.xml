@@ -9,12 +9,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <VideoView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/videoView"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:onClick="VideoView_click"
+        android:background="@android:color/transparent"/>
 
 
 </RelativeLayout>
