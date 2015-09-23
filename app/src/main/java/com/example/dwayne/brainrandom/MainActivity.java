@@ -12,7 +12,10 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btn1,btn2,btn3;
     int counter = 0;
-    Integer[] numbers = {5, 6, 2, 8};
+    Integer[] numbers;
+
+    private static int GET_THIS_MANY_NUMBERS = 10;
+    private static int GET_NUMBERS_BETWEEN_ZERO_AND_THIS_MANY = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn2 = (Button) findViewById(R.id.button_three);
         btn3 = (Button) findViewById(R.id.button_four);
 
-        numbers = RandomNumberGenerator.getNumbers();
+        numbers = RandomNumberGenerator.getNumbers(GET_THIS_MANY_NUMBERS, GET_NUMBERS_BETWEEN_ZERO_AND_THIS_MANY);
     }
     @Override
     public void onClick(View v) {
