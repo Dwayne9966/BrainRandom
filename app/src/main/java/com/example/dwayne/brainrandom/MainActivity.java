@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         else {
             //Do something else, numbers is up
+            showCelebration();
         }
     }
     public void clicked(View v) {
