@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class Number_4 extends Fragment {
 private Button buttoned;
-    private int mNumbered;
+    private int mNumberel;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +23,11 @@ private Button buttoned;
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_numbers2, container, false);
         buttoned = (Button)view.findViewById(R.id.buttoneight);
-        buttoned.setText(mNumbered + "5");
+        buttoned.setText(mNumberel + "5");
         return view;
     }
     public void setNumbered(int number) {
-        mNumbered = number;
+        mNumberel = number;
     }
 
 }
