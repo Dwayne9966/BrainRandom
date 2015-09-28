@@ -19,12 +19,12 @@ public class Frag_Celebration extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_frag__celebration, container, false);
-    }
+        return inflater.inflate(R.layout.fragment_frag__celebration, container, false);}
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -33,13 +33,12 @@ public class Frag_Celebration extends Fragment {
         final VideoView videoView = (VideoView) relativeLayout.findViewById(R.id.videoView);
         Uri videoUri = Uri.parse("android.resource://" + getActivity().getPackageName() + "/" + R.raw.iceb);
         videoView.setVideoURI(videoUri);
-        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener()
+        {
             @Override
             public void onPrepared(MediaPlayer mp) {
                 mp.setLooping(true);
-            }
-        });
+            }});
         videoView.start();
     }
-
 }

@@ -1,17 +1,27 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
+    android:padding="1dp"
+    android:background="#FFFF30"
     android:layout_height="match_parent"
     android:id="@+id/fragmentB"
     tools:context="com.example.dwayne.brainrandom.Number_2">
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="430dp"
+        android:padding="1dp"
         android:onClick="clicked_two"
-
         android:id="@+id/button_three"
         android:textSize="193sp"
         android:background="#FFFF30"/>
+
+    <ImageButton
+        android:background="#FFFF30"
+        android:padding="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bnt_number_three_id"
+        android:src="@drawable/audioxl"
+        android:layout_gravity="center_horizontal|bottom" />
 
 </FrameLayout>

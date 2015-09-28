@@ -23,7 +23,7 @@ public class Number_2 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_number_2, container, false);
         button_three = (Button)view.findViewById(R.id.button_three);
-        button_three.setText(mNumbered + "4");
+        button_three.setText(mNumbered + "");
         return view;
     }
     public void setNumber(int number) {

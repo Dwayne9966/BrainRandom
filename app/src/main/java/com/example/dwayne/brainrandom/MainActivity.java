@@ -2,18 +2,28 @@ package com.example.dwayne.brainrandom;
 
 
 
+
 import android.content.Intent;
+import android.media.AudioAttributes;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btn1,btn2,btn3;
+    Button btn1, btn2, btn3;
     int counter = 0;
+  MediaPlayer mp;
     Integer[] numbers;
-
+/*
+Die ewewige getalle eers dan die onewige getalle.
+ */
     private static int GET_THIS_MANY_NUMBERS = 10;
     private static int GET_NUMBERS_BETWEEN_ZERO_AND_THIS_MANY = 10;
 
@@ -27,6 +37,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         numbers = RandomNumberGenerator.getNumbers(GET_THIS_MANY_NUMBERS, GET_NUMBERS_BETWEEN_ZERO_AND_THIS_MANY);
     }
+
+    public static void main(String args[]){
+        /*
+        Eweige getalle
+         */
+        int var1 = 1;
+        int number_btn_one;
+        int var2 = 2;
+        int var3 = 3;
+        int var4 = 4;
+        int var5 = 5;
+        /*
+        Onewige getalle
+         */
+        int var6 = 6;
+        int var7 = 7;
+        int var8 = 8;
+        int var9 = 9;
+        int var10 = 10;
+
+
+        switch (var1){
+            case R.id.bnt_number_three_id:
+                R.raw.one;
+
+    }}
     @Override
     public void onClick(View v) {
         showNextNumber();
@@ -38,8 +74,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_four:
                 counter++;
             case R.id.videoView:
-                Intent intent =  new Intent(this.getApplication(),Frag_Celebration.class);
-                startActivity(intent);
                 break;
         }
     }
@@ -54,7 +88,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     .addToBackStack(null)
                     .commit();
         }
-
         else {
             //Do something else, numbers is up
             showCelebration();
@@ -96,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FragmentManager fragmentManager = getSupportFragmentManager();
         Frag_Celebration fragmentC = new Frag_Celebration();
         fragmentManager.beginTransaction()
-                .replace(R.id.centerMain,fragmentC,"NUMBER")
+                .replace(R.id.centerMain, fragmentC, "NUMBER")
                 .addToBackStack(null)
                 .commit();
     }

@@ -21,7 +21,6 @@
         android:onClick="VideoView_click"
         android:background="@android:color/transparent"/>
 
-
 </RelativeLayout>
 
 </FrameLayout>
